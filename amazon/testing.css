@@ -1,0 +1,413 @@
+
+*{
+   border: 0px;
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white; /*................ i have to remove this after completition of the project................*/
+   }
+   
+   /*..................Navbar........................*/
+   .nav-container{
+      background-color:#0f1111;
+      height: 3.75rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+   }
+   .nav-logo-section{
+      display: flex;
+      align-items: center;
+      height: 9rem;
+      width: 7rem;
+   
+   }
+   
+   .nav-logo{
+      background-image: url("imeg/amazon_logo.png");
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 3.5rem;
+      width: 100%;
+   }
+   
+   .border{
+      border:0.125rem solid transparent;   
+      &:hover{
+         border:0.125rem solid rgb(255, 255, 255);
+         border-radius: 0.2rem;
+      }
+   }
+   
+   /* .......................Address........................ */
+   
+   
+   .address-section{
+      padding: 0.2rem;
+   }
+   
+   .address1{
+      color: #ccc;
+      font-size: 0.8rem;
+      margin-left: 1.5rem;
+      padding-top: 0.2rem;
+   }
+   
+   
+   .address2 {
+      /* font-weight: 700; */
+      display:flex;
+      align-items:center;
+      padding-left: 0.4rem;
+      padding-right: 0.3rem;
+      padding-top: 0.1rem;
+      padding-bottom: 0.2rem;
+   }
+   
+   .address2 i{
+      position: relative;
+      right: 0.2rem;
+   }
+   
+   .address2 p{
+      color: white;
+      font-weight: 700;
+   }
+   
+   /*.....................Search..........................*/
+   
+   .Select-division{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;   
+      height: 2.7rem;
+      width: 50%;
+      border-radius: 0.25rem;
+      border: 0.1rem solid transparent;
+      &:hover{
+         
+         border: orange solid 0.1rem;
+         /* border-radius: 0.26rem; */
+      }
+   }
+   
+   .search-type{
+   height: 2.5rem;
+   width: 2.8125rem;
+   border-top-left-radius:0.25rem ;
+   border-bottom-left-radius:0.25rem ;
+   background-color: #d8d5d5;
+   color: #0f1111;
+   font-size: 0.9rem;
+   text-align: center;
+   border: none;
+   outline: none;
+   border:0.1rem solid transparent;
+   &:hover{
+      opacity: 0.9;
+   }
+   }
+   
+   .search-type option{
+      color: black;
+      background-color:white;
+      text-align: left;
+      font-size: 0.8rem;
+   }
+   
+   
+   .search-input{
+      height: 2.5rem;
+      width: 100%;
+      font-size: 1.25rem;
+      padding-left: 0.5rem;
+      border: none;
+      outline: none;
+      color: black;
+   }
+   
+   .search-icon{
+      background-color: orange;
+      height: 2.5rem;
+      width: 2.8125rem;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   
+   
+   }
+   .search-icon i{
+      color: white;
+      font-size: 1.3rem;
+   }
+   
+   
+   /*.....................Language and flag......................*/
+   
+   .lang-division{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.2rem;
+      gap: 0.1rem;
+   }
+   
+   
+   .india-logo{
+      background-image: url("imeg/ind-flag.png");
+      background-size:cover;
+      background-position: center;
+      height: 35px;
+      width: 30px;
+   }
+   
+
+   
+   .lang-option{
+      background-color: transparent;
+      color: white;
+      width: 38px;
+      border: none;
+      outline: none;
+      height: 35px;
+   }
+   
+   .lang-option option{
+     color: black;
+   }
+   
+   
+   /*.....................Sign in and Return......................*/
+   
+   .signin-division{
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+      padding: 0.2rem;
+   
+   }
+   
+   .text1{
+      color: rgb(237, 232, 232);
+      /* text-align: center; */
+      font-size: 0.8rem;
+      padding-left: 0.5rem;
+      margin-left: 0.2rem;
+   }
+   
+   .text2{
+      /* text-align: center; */
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      background-color:transparent;
+      border: none;
+      outline: none;
+   
+   }
+   
+   
+   /* .............Return.................*/
+   
+   
+   .return-division{
+      padding: 0.3rem;
+   }
+   
+   .txt1 span{
+      color: rgb(237, 232, 232);
+      /* text-align: center; */
+      font-size: 0.8rem;
+   }
+   
+   .txt2 span{
+      color:white;
+      font-weight: 600;
+   }
+   
+   
+   /*.....................Cart......................*/
+   
+   .cart-division{
+      padding: 0.4rem;
+   }
+   
+   .cart i{
+   font-size: 1.825rem;
+   
+   }
+   
+   .cart span{
+      color: white;
+   
+   }
+   
+   /* ............Subnav.............. */
+   .subnavbar-container {
+      background-color: #232f3e;
+      height: 2.5rem;
+      display: flex;
+      align-items:center;
+      justify-items: center;
+   }
+   
+ .all-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0.425rem;
+   margin-left: 0.625rem;
+   padding-right: 0.625rem;
+   font-size: 0.875rem;
+   font-weight: 700;
+
+ }
+ .all-container i{
+   font-size: 1.25rem;
+   padding-right: 0.27rem;
+ }
+
+  .panel-options{
+     display: flex;
+     /* justify-content: space-between; */
+     align-items: center;
+     width: 100%;
+  }
+
+ 
+
+ .Fresh-select{
+   background-color: transparent;
+   font-size: 1.1rem;
+   font-size: 0.85rem;
+ }
+ ul{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 100%;
+   list-style-type: none;
+
+ }
+ ul a{
+   text-decoration: none;
+
+ }
+ 
+ .unorder li {
+   font-size: 0.85rem;
+   font-weight: 500;
+   padding: 0.625rem;
+   border:0.125rem solid transparent ;
+   &:hover{
+       border:0.125rem solid rgb(255, 255, 255);
+       border-radius: 0.2rem;
+   }
+ }
+
+ /* .book-text{
+
+ } */
+
+ /* ..........hero section............. */
+ .hero-section-container{
+  background-image: url("/imeg/hero_image.jpg");
+  background-size:cover;
+  height: 31.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+
+}
+
+
+.hero-text{
+  background-color: white;
+  color: black;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96%;
+  font-size: 0.85rem;
+  position: relative;
+  bottom: 100px;
+}
+
+.hero-text a{
+  text-decoration:none;
+  color: #008CBA ;
+
+}
+
+/* edit */
+
+.complete-container{
+   background: linear-gradient(to right,#324065, #bcd1d2);
+   border: 5px solid black;
+   padding: 10px;
+
+
+}
+
+.different-options{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+.four-items-containers{
+   display: flex;
+   align-items: center;
+   margin: 10px;
+   height: 19rem;
+   border: 3px solid greenyellow;
+   /* background-color: white; */
+}
+
+.item-box-container{
+   height: 17rem;
+   width: 21rem;
+   border: 2px solid #008CBA;
+   margin: 10px;
+   /* background-color: white; */
+}
+
+/* img insertng  */
+
+.item-img{
+   background-image: url(/imeg/box2_image.jpg);
+   background-size: cover;
+   height: 12.7rem;
+   width: 17rem;
+   margin: 0px 20px 5px 20px;
+}
+
+
+
+/* before the footer signin recommend */
+.sigin-recommendation{
+width: 100%;
+height: 12.7rem;
+}
+
+.outline-div{
+  outline: 0.2rem;
+  border-radius: 2rem;
+  width: 100%;
+  height: 10rem;
+}
+
+.heading-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
