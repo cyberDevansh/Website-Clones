@@ -315,7 +315,7 @@
 
   /* ..........hero section............. */
   .hero-section-container{
-   background-image: url("/imeg/hero_image.jpg");
+   background-image: url("imeg/hero_image.jpg");
    background-size:cover;
    height: 31.25rem;
    display: flex;
