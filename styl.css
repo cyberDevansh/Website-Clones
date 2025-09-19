@@ -51,3 +51,23 @@ body::before {
     z-index: 1;
  
 }
+
+.main-heading{
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 20px;
+    color: #ff5733;
+    text-shadow: 2px 2px 4px #000000;
+}
+.underheading{
+    text-align:end;
+    font-size: 0.9vw;
+    margin-bottom: 20px;
+    margin-right: 20vw;
+    color: #6893dd;
+    margin-top: -15px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.list-container{
+   font-size: 3vh;
+}
