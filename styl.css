@@ -1,9 +1,80 @@
 *{
-    color: #008CBA;
+    --mycolor:#008CBA;
     box-sizing: border-box;
     margin: 0;
-    padding: 10px;
-    font-family: Lucida Handwriting;
+    padding: 0px;
+    font-family: Lucida ;
+}
+
+
+
+@font-face{
+    font-family: "Gopalji-Font1";
+    src: url('CinzelDecorative-Bold.ttf') format("truetype");
+}
+
+
+body {
+	background: linear-gradient(45deg, #2d2d2d 9%, #000 100%);
+	height: 100vh;
+}
+
+.flickring-letter{
+    position: relative;
+}
+.flickring-letter>h1:first-of-type{
+    color: rgba(45,45,45,1);
+}
+
+.styl{  
+    margin: calc(1vw + 1vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text {
+	font-family: "Gopalji-Font1","Fira Mono", monospace, Lucida;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.2ch;
+	font-size: 5vw;
+	line-height: 1;
+	margin: 0;
+}
+	
+	
+span {
+	--offset: 2.38;
+	position: absolute;
+	color: #ffcc00;
+	left: calc(var(--offset) * 1ch + calc(var(--offset) * 0.2ch));
+	animation: flicker 3s linear infinite;
+	top: 0;
+	z-index: 1;
+}
+
+
+@keyframes flicker {
+	0%, 19.9%, 22%, 62.9%, 64%, 64.9%, 70%, 100% {
+		opacity: 0.99;
+		text-shadow: 
+			-1px -1px 0 rgba(255,255,255, 0.4), 
+			1px -1px 0 rgba(255,255,255, 0.4), 
+			-1px 1px 0 rgba(255,255,255, 0.4), 
+			1px 1px 0 rgba(255,255,255, 0.4), 
+			0 -2px 8px, 
+			0 0 2px, 
+			0 0 5px #ff7e00, 
+			0 0 15px #ff4444, 
+			0 0 2px #ff7e00, 
+			0 2px 3px #000;
+	}
+	63%, 63.9%, 65%, 69.9% {
+		opacity: 0;
+		text-shadow: none;
+	}
 }
 
 
@@ -11,12 +82,11 @@
 
 body::before {
     content: "";
-    position:absolute;
-    top: 0;
-    left: 0;
+    /* position:absolute; */
+    /* top: 0;
+    left: 0; */
     width: 100%;
     height: 100%;
-    background-image: url('imeg/1156488.png');
     background-size: cover;
     background-position: center;
     opacity: 1;  
@@ -52,14 +122,14 @@ body::before {
  
 }
 
-.main-heading{
+/* .main-heading{
     text-align: center;
     font-size: 3vw;
     margin-top: 20px;
     color: #ff5733;
     text-shadow: 2px 2px 4px #000000;
-}
-.underheading{
+} */
+/* .underheading{
     text-align:end;
     font-size: 0.9vw;
     margin-bottom: 20px;
@@ -67,7 +137,23 @@ body::before {
     color: #6893dd;
     margin-top: -15px;
     text-shadow: 2px 2px 4px #000000;
+} */
+
+.container{
+    padding: 25px;
+    margin: 25px;
+
 }
 .list-container{
    font-size: 3vh;
 }
+.list-container li{
+    margin: 15px;
+    color: #dddddd;
+}
+
+.options a{
+    color:#A87C3F;
+     text-decoration: none;
+}
+
