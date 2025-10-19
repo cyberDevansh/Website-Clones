@@ -159,11 +159,11 @@ body::before {
 
 .boat {
     position: absolute;
-    animation: sail 170s  infinite alternate;
+    animation: sail 20s ease-in-out infinite alternate;
   }
 
   @keyframes sail {
     0% { left: -200px; }
-    100% { left: 100vw; }
+    100% { left: 15vw; }
   }
 
